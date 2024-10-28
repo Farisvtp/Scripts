@@ -1,7 +1,7 @@
 resource "aws_instance" "Banking_Project_DJP_Instance" {
   count         = 2
   ami           = "ami-0522ab6e1ddcc7055"  # Replace with the latest Ubuntu 24.04 AMI ID
-  instance_type = "t2.medium"
+  instance_type = "t3.medium"
   subnet_id     = aws_subnet.Banking_Project_Subnet.id
 
   associate_public_ip_address = true
